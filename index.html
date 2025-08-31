@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Language Interaction Simulation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Language Interaction Simulator</h1>
+    <p>Interactive visualization of language interaction and decay over time</p>
+</header>
+<main>
+    <canvas id="simCanvas"></canvas>
+    <div id="controls">
+        <button id="startBtn">Start Simulation</button>
+        <label for="mergeRate">Merge Rate: <span id="mergeVal">50</span>%</label>
+        <input type="range" id="mergeRate" min="0" max="100" value="50">
+        <label for="dieRate">Death Rate: <span id="dieVal">10</span>%</label>
+        <input type="range" id="dieRate" min="0" max="100" value="10">
+        <label for="newSpeakers">New Speakers Rate: <span id="newVal">5</span>%</label>
+        <input type="range" id="newSpeakers" min="0" max="20" value="5">
+    </div>
+</main>
+<footer>
+    <p>Simulation inspired by real-world studies of language contact and shift.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
